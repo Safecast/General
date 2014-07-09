@@ -51,7 +51,7 @@
 //
 // This is just a bunch of inlined functions so paste into some other file.
 //
-// Make sure you have pnglib included and just call _WriteImagePNG.
+// Make sure you have libpng included and just call _WriteImagePNG.
 //
 // If you don't have a RGBA8888 buffer, you'll need to convert or make one.
 //
@@ -76,14 +76,14 @@ static inline int _WriteImagePNG(const char*  filename,
                                  uint8_t*     src_rgba8888)
 {
 	int         code        = 0;
-    bool        shouldWrite = true;
+        bool        shouldWrite = true;
 	png_structp png_ptr;
 	png_infop   info_ptr;
 	
 	FILE *fp = fopen(filename, "wb");
     
 	if (fp == NULL)
-    {
+        {
 		fprintf(stderr, "Could not open file %s for writing\n", filename);
 		code = 1;
 		shouldWrite = false;
@@ -231,7 +231,7 @@ static inline int _WriteImagePNG(const char*  filename,
         {
             if (_AccelerateFuckYeah())
             {
-#ifdef VIMAGE_CONVERSION
+#ifdef VIMAGE_CONVERSION_H
                 vImage_Buffer viDataSrc  = { src_rgba8888, height, width, width *  4              };
                 vImage_Buffer viDataDest = { src_rgba8888, height, width, width * (writeBPP >> 3) };
                 
@@ -542,7 +542,7 @@ static inline void _RGBA8888_u32_to_png_color_a08(const uint32_t* src,
                 height = 1;
             }//else
             
-#ifdef VIMAGE_CONVERSION
+#ifdef VIMAGE_CONVERSION_H
             vImage_Buffer viDataSrc  = { (void*)src,      height, width, width * 4 };
             vImage_Buffer viDataDest = { (void*)dest_rgb, height, width, width * 3 };
             
