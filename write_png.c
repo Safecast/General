@@ -482,25 +482,20 @@ static inline void _RGBA8888_to_RGB888_InPlace_scalar(uint8_t*     src,
                                                       const size_t width,
                                                       const size_t height)
 {
-    size_t  rgbIdx   = 0;
-    size_t  rowBytes = width * 4;
-    uint8_t tempRow[rowBytes];
-    size_t  y_rowBytes;
-    size_t  x;
-    
-    for (size_t y = 0; y < height; y++)
+    if (width * height < 4)
     {
-        y_rowBytes = y * rowBytes;
-        rgbIdx    = 0;
+        return;
+    }//if
+    
+    size_t rgbIdx = 3;
+    
+    for (size_t i=4; i<width*height*4; i+=4)
+    {
+        src[rgbIdx  ] = src[i  ];
+        src[rgbIdx+1] = src[i+1];
+        src[rgbIdx+2] = src[i+2];
         
-        for (x = 0; x < rowBytes; x += 4)
-        {
-            tempRow[rgbIdx++] = src[y_rowBytes+x];
-            tempRow[rgbIdx++] = src[y_rowBytes+x+1];
-            tempRow[rgbIdx++] = src[y_rowBytes+x+2];
-        }//for
-        
-        memcpy(src + y_rowBytes, tempRow, rowBytes);
+        rgbIdx += 3;
     }//for
 }//_RGBA8888_to_RGB888_InPlace_scalar
 
