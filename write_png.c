@@ -68,7 +68,7 @@
 // assumes you are including libpng and zlib already.
 //
 // if osx/ios, include Accelerate.h.
-// if ARM, include neon.h
+// if ARM, include arm_neon.h
 // if x86/AMD64, include NEONvsSSE_5.h
 static inline int _WriteImagePNG(const char*  filename,
                                  const size_t width,
@@ -153,7 +153,7 @@ static inline int _WriteImagePNG(const char*  filename,
         size_t     _last_i;
         size_t     color_n = _MakePaletteFromRGBA8888(src_rgba8888, width, height, &_p, &_a, &_i, &_nopIdx, &_last_i);
         
-        isOpaque = color_n <= 256 && _a == NULL;
+        isOpaque = _a == NULL; // 2014-07-31 ND: bugfix, should not compare color_n
         
         if (color_n <= 256)
         {
@@ -163,7 +163,7 @@ static inline int _WriteImagePNG(const char*  filename,
             
             if (!isOpaque)
             {
-                png_set_tRNS(png_ptr, info_ptr, &(_a[0]), (int)_nopIdx+1, NULL);
+                png_set_tRNS(png_ptr, info_ptr, &(_a[0]), (int)_nopIdx, NULL); // 2014-07-31 ND: bugfix and no longer offseting by 1
             }//if
             
             free(_p);
@@ -271,7 +271,7 @@ static inline size_t _MakePaletteFromRGBA8888(uint8_t*     src,
                                               png_color**  rgbOut,
                                               uint8_t**    aOut,
                                               uint8_t**    idxOut,
-                                              size_t*      lastNonOpaqueIdx,
+                                              size_t*      nonOpaque_n,
                                               size_t*      lastScanIdx)
 {
     const size_t        n = width * height;
@@ -344,7 +344,7 @@ static inline size_t _MakePaletteFromRGBA8888(uint8_t*     src,
     free(idxs_u16);
     idxs_u16 = NULL;
     
-    *lastNonOpaqueIdx = palIdx_IsO == 0 ? UINT32_MAX : palIdx_IsO - 1;
+    *nonOpaque_n      = palIdx_NoO; // 2014-07-31 ND: bugfix, confusing names =o
     *rgbOut           = _pal;
     *aOut             = _a;
     *idxOut           = idxs_u08;
