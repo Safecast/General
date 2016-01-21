@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAD91DD41C50AD6E00C948FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DD31C50AD6E00C948FD /* AppDelegate.m */; };
+		FAD91DD71C50AD6E00C948FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DD61C50AD6E00C948FD /* main.m */; };
+		FAD91DD91C50AD6E00C948FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD91DD81C50AD6E00C948FD /* Assets.xcassets */; };
+		FAD91DDC1C50AD6E00C948FD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD91DDA1C50AD6E00C948FD /* MainMenu.xib */; };
+		FAD91DF71C50B10900C948FD /* gbThreadGuard.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DE61C50B10900C948FD /* gbThreadGuard.c */; };
+		FAD91DF81C50B10900C948FD /* gbDB.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DE81C50B10900C948FD /* gbDB.c */; };
+		FAD91DF91C50B10900C948FD /* gbLUT_Numerics_SIMD.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DEB1C50B10900C948FD /* gbLUT_Numerics_SIMD.c */; };
+		FAD91DFA1C50B10900C948FD /* gbLUT_Numerics.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DED1C50B10900C948FD /* gbLUT_Numerics.c */; };
+		FAD91DFB1C50B10900C948FD /* gbLUT_Transforms.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DEF1C50B10900C948FD /* gbLUT_Transforms.c */; };
+		FAD91DFC1C50B10900C948FD /* gbLUT_Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DF11C50B10900C948FD /* gbLUT_Utils.c */; };
+		FAD91DFD1C50B10900C948FD /* gbLUT.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DF41C50B10900C948FD /* gbLUT.c */; };
+		FAD91DFE1C50B10900C948FD /* gbImage_Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = FAD91DF61C50B10900C948FD /* gbImage_Utils.c */; };
+		FAD91E071C50B25800C948FD /* lut_v2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FAD91E061C50B25800C948FD /* lut_v2.sqlite */; };
+		FAD91E091C50BE5200C948FD /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD91E081C50BE5200C948FD /* Accelerate.framework */; };
+		FAD91E0B1C50BE9E00C948FD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD91E0A1C50BE9E00C948FD /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAD91DCF1C50AD6E00C948FD /* LutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD91DD21C50AD6E00C948FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAD91DD31C50AD6E00C948FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAD91DD61C50AD6E00C948FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAD91DD81C50AD6E00C948FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD91DDB1C50AD6E00C948FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FAD91DDD1C50AD6E00C948FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD91DE51C50B10900C948FD /* gbCommon_TypeDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbCommon_TypeDefs.h; sourceTree = "<group>"; };
+		FAD91DE61C50B10900C948FD /* gbThreadGuard.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbThreadGuard.c; sourceTree = "<group>"; };
+		FAD91DE71C50B10900C948FD /* gbThreadGuard.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = gbThreadGuard.h; sourceTree = "<group>"; };
+		FAD91DE81C50B10900C948FD /* gbDB.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbDB.c; sourceTree = "<group>"; };
+		FAD91DE91C50B10900C948FD /* gbDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbDB.h; sourceTree = "<group>"; };
+		FAD91DEA1C50B10900C948FD /* gbLUT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbLUT.h; sourceTree = "<group>"; };
+		FAD91DEB1C50B10900C948FD /* gbLUT_Numerics_SIMD.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbLUT_Numerics_SIMD.c; sourceTree = "<group>"; };
+		FAD91DEC1C50B10900C948FD /* gbLUT_Numerics_SIMD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbLUT_Numerics_SIMD.h; sourceTree = "<group>"; };
+		FAD91DED1C50B10900C948FD /* gbLUT_Numerics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbLUT_Numerics.c; sourceTree = "<group>"; };
+		FAD91DEE1C50B10900C948FD /* gbLUT_Numerics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbLUT_Numerics.h; sourceTree = "<group>"; };
+		FAD91DEF1C50B10900C948FD /* gbLUT_Transforms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbLUT_Transforms.c; sourceTree = "<group>"; };
+		FAD91DF01C50B10900C948FD /* gbLUT_Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbLUT_Transforms.h; sourceTree = "<group>"; };
+		FAD91DF11C50B10900C948FD /* gbLUT_Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbLUT_Utils.c; sourceTree = "<group>"; };
+		FAD91DF21C50B10900C948FD /* gbLUT_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbLUT_Utils.h; sourceTree = "<group>"; };
+		FAD91DF31C50B10900C948FD /* gbLUT_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbLUT_Types.h; sourceTree = "<group>"; };
+		FAD91DF41C50B10900C948FD /* gbLUT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbLUT.c; sourceTree = "<group>"; };
+		FAD91DF51C50B10900C948FD /* gbImage_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gbImage_Utils.h; sourceTree = "<group>"; };
+		FAD91DF61C50B10900C948FD /* gbImage_Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gbImage_Utils.c; sourceTree = "<group>"; };
+		FAD91E041C50B23E00C948FD /* NEONvsSSE_5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEONvsSSE_5.h; sourceTree = "<group>"; };
+		FAD91E051C50B23E00C948FD /* NEONvsSSE_gbExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEONvsSSE_gbExt.h; sourceTree = "<group>"; };
+		FAD91E061C50B25800C948FD /* lut_v2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lut_v2.sqlite; sourceTree = "<group>"; };
+		FAD91E081C50BE5200C948FD /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		FAD91E0A1C50BE9E00C948FD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD91DCC1C50AD6E00C948FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD91E0B1C50BE9E00C948FD /* libsqlite3.tbd in Frameworks */,
+				FAD91E091C50BE5200C948FD /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAD91DC61C50AD6E00C948FD = {
+			isa = PBXGroup;
+			children = (
+				FAD91E0A1C50BE9E00C948FD /* libsqlite3.tbd */,
+				FAD91E081C50BE5200C948FD /* Accelerate.framework */,
+				FAD91DD11C50AD6E00C948FD /* LutDemo */,
+				FAD91DD01C50AD6E00C948FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD91DD01C50AD6E00C948FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91DCF1C50AD6E00C948FD /* LutDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD91DD11C50AD6E00C948FD /* LutDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91DD21C50AD6E00C948FD /* AppDelegate.h */,
+				FAD91DD31C50AD6E00C948FD /* AppDelegate.m */,
+				FAD91DD81C50AD6E00C948FD /* Assets.xcassets */,
+				FAD91DDA1C50AD6E00C948FD /* MainMenu.xib */,
+				FAD91DDD1C50AD6E00C948FD /* Info.plist */,
+				FAD91DD51C50AD6E00C948FD /* Supporting Files */,
+			);
+			path = LutDemo;
+			sourceTree = "<group>";
+		};
+		FAD91DD51C50AD6E00C948FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91E031C50B14900C948FD /* gbCommon */,
+				FAD91E011C50B12400C948FD /* gbDB */,
+				FAD91E001C50B11D00C948FD /* gbImage */,
+				FAD91DFF1C50B11600C948FD /* gbThreadGuard */,
+				FAD91DE31C50B0DA00C948FD /* gbLUT */,
+				FAD91E021C50B13500C948FD /* NEON2SSE */,
+				FAD91DE41C50B0E500C948FD /* SQLite3 DBs */,
+				FAD91DD61C50AD6E00C948FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAD91DE31C50B0DA00C948FD /* gbLUT */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91DF31C50B10900C948FD /* gbLUT_Types.h */,
+				FAD91DEA1C50B10900C948FD /* gbLUT.h */,
+				FAD91DF41C50B10900C948FD /* gbLUT.c */,
+				FAD91DF21C50B10900C948FD /* gbLUT_Utils.h */,
+				FAD91DF11C50B10900C948FD /* gbLUT_Utils.c */,
+				FAD91DF01C50B10900C948FD /* gbLUT_Transforms.h */,
+				FAD91DEF1C50B10900C948FD /* gbLUT_Transforms.c */,
+				FAD91DEE1C50B10900C948FD /* gbLUT_Numerics.h */,
+				FAD91DED1C50B10900C948FD /* gbLUT_Numerics.c */,
+				FAD91DEC1C50B10900C948FD /* gbLUT_Numerics_SIMD.h */,
+				FAD91DEB1C50B10900C948FD /* gbLUT_Numerics_SIMD.c */,
+			);
+			name = gbLUT;
+			sourceTree = "<group>";
+		};
+		FAD91DE41C50B0E500C948FD /* SQLite3 DBs */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91E061C50B25800C948FD /* lut_v2.sqlite */,
+			);
+			name = "SQLite3 DBs";
+			sourceTree = "<group>";
+		};
+		FAD91DFF1C50B11600C948FD /* gbThreadGuard */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91DE71C50B10900C948FD /* gbThreadGuard.h */,
+				FAD91DE61C50B10900C948FD /* gbThreadGuard.c */,
+			);
+			name = gbThreadGuard;
+			sourceTree = "<group>";
+		};
+		FAD91E001C50B11D00C948FD /* gbImage */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91DF51C50B10900C948FD /* gbImage_Utils.h */,
+				FAD91DF61C50B10900C948FD /* gbImage_Utils.c */,
+			);
+			name = gbImage;
+			sourceTree = "<group>";
+		};
+		FAD91E011C50B12400C948FD /* gbDB */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91DE91C50B10900C948FD /* gbDB.h */,
+				FAD91DE81C50B10900C948FD /* gbDB.c */,
+			);
+			name = gbDB;
+			sourceTree = "<group>";
+		};
+		FAD91E021C50B13500C948FD /* NEON2SSE */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91E041C50B23E00C948FD /* NEONvsSSE_5.h */,
+				FAD91E051C50B23E00C948FD /* NEONvsSSE_gbExt.h */,
+			);
+			name = NEON2SSE;
+			sourceTree = "<group>";
+		};
+		FAD91E031C50B14900C948FD /* gbCommon */ = {
+			isa = PBXGroup;
+			children = (
+				FAD91DE51C50B10900C948FD /* gbCommon_TypeDefs.h */,
+			);
+			name = gbCommon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD91DCE1C50AD6E00C948FD /* LutDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD91DE01C50AD6E00C948FD /* Build configuration list for PBXNativeTarget "LutDemo" */;
+			buildPhases = (
+				FAD91DCB1C50AD6E00C948FD /* Sources */,
+				FAD91DCC1C50AD6E00C948FD /* Frameworks */,
+				FAD91DCD1C50AD6E00C948FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LutDemo;
+			productName = LutDemo;
+			productReference = FAD91DCF1C50AD6E00C948FD /* LutDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD91DC71C50AD6E00C948FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					FAD91DCE1C50AD6E00C948FD = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = FAD91DCA1C50AD6E00C948FD /* Build configuration list for PBXProject "LutDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD91DC61C50AD6E00C948FD;
+			productRefGroup = FAD91DD01C50AD6E00C948FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD91DCE1C50AD6E00C948FD /* LutDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD91DCD1C50AD6E00C948FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD91E071C50B25800C948FD /* lut_v2.sqlite in Resources */,
+				FAD91DD91C50AD6E00C948FD /* Assets.xcassets in Resources */,
+				FAD91DDC1C50AD6E00C948FD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD91DCB1C50AD6E00C948FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD91DF71C50B10900C948FD /* gbThreadGuard.c in Sources */,
+				FAD91DFB1C50B10900C948FD /* gbLUT_Transforms.c in Sources */,
+				FAD91DD71C50AD6E00C948FD /* main.m in Sources */,
+				FAD91DFD1C50B10900C948FD /* gbLUT.c in Sources */,
+				FAD91DFA1C50B10900C948FD /* gbLUT_Numerics.c in Sources */,
+				FAD91DFC1C50B10900C948FD /* gbLUT_Utils.c in Sources */,
+				FAD91DFE1C50B10900C948FD /* gbImage_Utils.c in Sources */,
+				FAD91DF81C50B10900C948FD /* gbDB.c in Sources */,
+				FAD91DF91C50B10900C948FD /* gbLUT_Numerics_SIMD.c in Sources */,
+				FAD91DD41C50AD6E00C948FD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAD91DDA1C50AD6E00C948FD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD91DDB1C50AD6E00C948FD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAD91DDE1C50AD6E00C948FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FAD91DDF1C50AD6E00C948FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAD91DE11C50AD6E00C948FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LutDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndolezal.LutDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAD91DE21C50AD6E00C948FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LutDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndolezal.LutDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD91DCA1C50AD6E00C948FD /* Build configuration list for PBXProject "LutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD91DDE1C50AD6E00C948FD /* Debug */,
+				FAD91DDF1C50AD6E00C948FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD91DE01C50AD6E00C948FD /* Build configuration list for PBXNativeTarget "LutDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD91DE11C50AD6E00C948FD /* Debug */,
+				FAD91DE21C50AD6E00C948FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD91DC71C50AD6E00C948FD /* Project object */;
+}
